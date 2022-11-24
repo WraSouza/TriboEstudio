@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "627921694330",
+    "firebase_url": "https://triboestudio-d0828-default-rtdb.firebaseio.com",
+    "project_id": "triboestudio-d0828",
+    "storage_bucket": "triboestudio-d0828.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627921694330:android:07709bdd9c1639c0a355c3",
+        "android_client_info": {
+          "package_name": "com.mlsolucoes.tribopersonalestudio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627921694330-p9suk26uul96m4j3898pehm6gk4280jr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfrhVRqB3f2Ne4B2cvAADsuJGa598yi9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627921694330-p9suk26uul96m4j3898pehm6gk4280jr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

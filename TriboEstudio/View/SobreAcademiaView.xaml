@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TriboEstudio.View.SobreAcademiaView"
+             xmlns:mvvm="clr-namespace:TriboEstudio.ViewModel"
+             NavigationPage.HasNavigationBar="False"
+             Title="Academia">
+    
+    
+    <VerticalStackLayout>
+        <Image Source="academiainterna.jpg"
+               Aspect="Fill"
+               HeightRequest="200"/>
+
+        <StackLayout Margin="20">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="pin.png"
+                       HeightRequest="25"/>
+                <Label Text="Rua Marechal Deodoro"
+                       Margin="5,0,0,0"
+                       VerticalTextAlignment="Center"
+                       FontSize="15"
+                       TextColor="Gray"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="0,20,0,0">
+                <Image Source="clock.png"
+                       HeightRequest="25"/>
+
+                <StackLayout Margin="10,0,0,0">
+                    <Label Text="07:00 - 23:00"                       
+                           VerticalTextAlignment="Center"
+                           FontSize="15"
+                           TextColor="Gray"/>
+
+                    <Label Text="Fechado"
+                           TextColor="Red"/>
+                </StackLayout>
+                
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="0,20,0,0">
+                <Image Source="phone.png"
+                       HeightRequest="25"/>
+                <Label Text="(55)xxxxx-xxxx"
+                       Margin="5,0,0,0"
+                       VerticalTextAlignment="Center"
+                       FontSize="15"
+                       TextColor="Gray"/>
+            </StackLayout>
+        </StackLayout>
+
+        <ScrollView Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" HeightRequest="300" Spacing="5" Margin="10">
+                <Image Source="propaganda1.jpeg"/>
+                <Image Source="propaganda2.jpeg"/>
+                <Image Source="propaganda3.jpeg"/>
+            </StackLayout>
+        </ScrollView>
+        
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="TriboEstudio.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:TriboEstudio.View"
+    xmlns:local="clr-namespace:TriboEstudio"
+    Shell.TabBarUnselectedColor="Gainsboro"
+    
+    Shell.NavBarHasShadow="False"
+    Shell.BackgroundColor="White"
+    Shell.TabBarForegroundColor="Black"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <Tab Title="Início" Icon="home.png" Route="Main">
+            <ShellContent Title="Início" ContentTemplate="{DataTemplate views:ProfessorMainView}" />
+        </Tab>
+
+        <Tab Title="Alunos" Icon="user.png">
+            <ShellContent Title="Ativos" ContentTemplate="{DataTemplate views:AlunosView}" />
+            <!--<ShellContent Title="Inativos" ContentTemplate="{DataTemplate views:AlunosInativosView}" />-->
+        </Tab>
+
+
+        <Tab Title="Finanças" Icon="financas.png">
+            <ShellContent Title="Finanças" ContentTemplate="{DataTemplate views:FinancasView}" />
+            <!--<ShellContent Title="Mensalidade" ContentTemplate="{DataTemplate views:MensalidadeMesView}" />-->
+        </Tab>
+
+        <Tab Title="Agenda" Icon="calendar.png">
+            <ShellContent Title="Agenda" ContentTemplate="{DataTemplate views:CalendarView}" />
+        </Tab>
+
+        <Tab Title="Perfil" Icon="user.png">
+            <ShellContent Title="Início" ContentTemplate="{DataTemplate views:PerfilView}" />
+        </Tab>
+
+    </TabBar>
+    
+
+</Shell>

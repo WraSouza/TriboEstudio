@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="TriboEstudio.View.LoginView"
+             Title="LoginView">
+    <Grid>
+
+        <StackLayout
+                Margin="50"
+                HorizontalOptions="Center"
+                VerticalOptions="StartAndExpand">
+            <Image Source="triboslogo.png" />
+
+        </StackLayout>
+
+        <StackLayout Margin="10,200,10,0" VerticalOptions="CenterAndExpand">
+
+            <Label
+                    FontFamily="OpenSansBold"
+                    FontSize="20"
+                    Text="Usuário"
+                    TextColor="Black" />
+            
+            <Entry Text="{Binding Nome}"
+                   FontSize="20"/>
+
+
+            <Label
+                    Margin="0,20,0,0"
+                    FontFamily="OpenSansSemiBold"
+                    FontSize="20"
+                    Text="Senha"
+                    TextColor="Black" />
+
+            <Entry Text="{Binding Senha}"
+                   FontSize="20"
+                   IsPassword="True"/>
+
+
+            <Button
+                    Margin="20,100,20,0" 
+                    BackgroundColor="Black"
+                    Command="{Binding LoginCommand}"
+                    Text="Login" />
+
+            <Label Margin="0,50,0,0" HorizontalTextAlignment="Center" FontFamily="MontserratMedium">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Não é aluno? "/>
+                        <Span Text="Clique Aqui" TextDecorations="Underline" TextColor="Blue"/>
+                        <Span Text= "  e conheça nossos planos."/>
+                    </FormattedString>
+                </Label.FormattedText>
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding AbrirSobreAcademiaView}"/>
+                </Label.GestureRecognizers>
+                
+                
+            </Label>
+        </StackLayout>
+
+        <ActivityIndicator
+                HorizontalOptions="Center"
+                IsRunning="{Binding IsBusy}"
+                VerticalOptions="Center"
+                Color="OrangeRed" />
+    </Grid>
+</ContentPage>
