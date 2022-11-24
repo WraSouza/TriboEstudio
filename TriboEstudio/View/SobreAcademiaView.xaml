@@ -5,8 +5,8 @@
              xmlns:mvvm="clr-namespace:TriboEstudio.ViewModel"
              NavigationPage.HasNavigationBar="False"
              Title="Academia">
-    
-    
+
+
     <VerticalStackLayout>
         <Image Source="academiainterna.jpg"
                Aspect="Fill"
@@ -47,6 +47,21 @@
                        VerticalTextAlignment="Center"
                        FontSize="15"
                        TextColor="Gray"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="0,20,0,0">
+                <Image Source="instagram.png"
+                       HeightRequest="25"/>
+                <Label Text="Tribo Personal Estudio"
+                       Margin="5,0,0,0"
+                       VerticalTextAlignment="Center"
+                       FontSize="15"
+                       TextDecorations="Underline"
+                       TextColor="Blue">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding AbrirInstagramView}"/>
+                    </Label.GestureRecognizers>
+                </Label>
             </StackLayout>
         </StackLayout>
 

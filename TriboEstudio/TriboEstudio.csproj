@@ -56,6 +56,7 @@
 	  <None Remove="Resources\Images\downarrow.png" />
 	  <None Remove="Resources\Images\financas.png" />
 	  <None Remove="Resources\Images\home.png" />
+	  <None Remove="Resources\Images\instagram.png" />
 	  <None Remove="Resources\Images\muscle.png" />
 	  <None Remove="Resources\Images\phone.png" />
 	  <None Remove="Resources\Images\pin.png" />
@@ -85,6 +86,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\FinancasView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\InstagramView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\LoginView.xaml">
